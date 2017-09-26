@@ -16,6 +16,6 @@ gulp.task('styles', function() {
 });
 
 // default task (watch styles then call styles)
-gulp.task('default', ['styles', 'bundle'], function(){
+gulp.task('default', ['styles'], function(){
     gulp.watch('styles/**/*.scss', ['styles']);
 });
